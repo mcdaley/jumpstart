@@ -105,7 +105,18 @@ mac: gem install rails
 mac: cd ..
 mac: rails new jumpstart --skip-coffee --skip-turbolinks --webpack=react -T
 mac: bundle install
+mac: bundle binstubs bundler --force    # regenerate the binstubs
 ```
+
+Now verify that rails and webpacker is up and running
+```bash
+mac: overmind start   # Starts bin/rails and bin/webpack-dev-server
+```
+
+Go to **http://localhost:5000** and you should get the "Yay! You're on rails" 
+page
+
+### Rspec and Capybara
 
 **NOTE:** 
 I used the -T option so testing is not installed with the project, I will install
