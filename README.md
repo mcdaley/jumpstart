@@ -116,8 +116,30 @@ mac: overmind start   # Starts bin/rails and bin/webpack-dev-server
 Go to **http://localhost:5000** and you should get the "Yay! You're on rails" 
 page
 
-### Rspec and Capybara
+### Rspec
 
 **NOTE:** 
 I used the -T option so testing is not installed with the project, I will install
 rspec and capybara next for testing.
+
+Add ```rspec-rails``` to both the ```:development``` and ```:test``` groups in the Gemfile:
+
+```
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+end
+```
+
+Download, install, and initialize Rspec
+
+```
+mac: bundle install
+mac: bin/rails generate rspec:install
+```
+
+### Capybara
+**NOTE:**
+I WILL ADD CAPYBARA LATER IN THE PROCESS
+
+### Other Gems
+
