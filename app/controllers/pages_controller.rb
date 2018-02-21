@@ -1,8 +1,7 @@
 #------------------------------------------------------------------------------
-# config/routes.rb
+# app/controllers/pages_controller.rb
 #------------------------------------------------------------------------------
-Rails.application.routes.draw do
-  root to: "pages#home"
-  
-  get 'pages/home'
+class PagesController < ApplicationController
+  def home
+  end
 end

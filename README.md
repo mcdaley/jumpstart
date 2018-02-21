@@ -122,6 +122,21 @@ haml
 better_errors
 annotate
 
+### Smoke Test
+Create a simple controller and view and verify that will be used for verifying
+my setup.
+
+```
+mac: bin/rails g controller pages home
+```
+
+```
+# config/routes.rb
+Rails.application.routes.draw do
+  root to: "pages#home"
+end
+```
+
 ## Setup Testing
 **CREATE SEPARATE SECTION FOR TESTING**
 ### Rspec

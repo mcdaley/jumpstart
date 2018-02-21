@@ -29,7 +29,7 @@ gem 'webpacker'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder',     '~> 2.5'
 
-gem 'haml', '~> 5.0', '>= 5.0.4'
+gem 'haml',         '~> 5.0', '>= 5.0.4'
 
 
 # Use Redis adapter to run Action Cable in production
