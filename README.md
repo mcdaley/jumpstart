@@ -5,7 +5,8 @@ reactjs project started that uses webpacker and bootstrap.
 # Installing software
 ## Software Versions
 rbenv
-npm
+node      - 9.3.0
+npm       - 5.6.0
 ruby      - 2.4.3
 rails     - 5.1.5
 sqlite3   - 
@@ -13,7 +14,7 @@ sqlite3   -
 homebrew  - Macos package manager
 rbenv     - Managing ruby versions 
 node      - NodeJS
-npm       - JavaScript package manager
+npm       - Node package manager for managing JavaScipt packages
 overmind  - Process manager that I can run multiple processes
 
 ### homebrew
@@ -116,6 +117,13 @@ mac: overmind start   # Starts bin/rails and bin/webpack-dev-server
 Go to **http://localhost:5000** and you should get the "Yay! You're on rails" 
 page
 
+### Other Gems
+haml
+better_errors
+annotate
+
+## Setup Testing
+**CREATE SEPARATE SECTION FOR TESTING**
 ### Rspec
 
 **NOTE:** 
@@ -141,5 +149,4 @@ mac: bin/rails generate rspec:install
 **NOTE:**
 I WILL ADD CAPYBARA LATER IN THE PROCESS
 
-### Other Gems
 
