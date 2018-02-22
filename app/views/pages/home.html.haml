@@ -4,7 +4,7 @@
 
 %section.jumbotron.text-center
   %div.container
-    %h1.jumbotron-heading   Bootstrap Album Example
+    %h1.jumbotron-heading   Jumpstart Album Example
     %p.lead.text-muted
       Something short and leading about the collection below—its contents, the 
       creator, etc. Make it short and sweet, but not too short so folks don't 
@@ -12,6 +12,9 @@
     %p
       %a{ href: "#", class: "btn btn-primary   my-2" } Main call to action
       %a{ href: "#", class: "btn btn-secondary my-2" } Secondary action
+      -#  Launch test modal window
+      %button.btn.btn-primary{ type: "button", data: { toggle: "modal", target: "#exampleModal" } }
+        Launch demo modal
 
 %div.album.py-5.bg-light
   %div.container
@@ -64,4 +67,20 @@
                 %button.btn.btn-sm.btn-outline-secondary{ type: "button" }  View
                 %button.btn.btn-sm.btn-outline-secondary{ type: "button" }  Edit
               %small.text-muted 9 mins
+              
+-#
+-# Modal Example used to verify bootstrap JavaScript is setup correctly
+-#
+%div#exampleModal.modal.fade{ tabindex: "-1", role: "dialog", aria: {labelledby: "exampleModalLabel", hidden: "true" } }
+  %div.modal-dialog{ role: "document" }
+    %div.modal-content
+      %div.modal-header
+        %h5#exampleModalLabel.modal-title Modal title
+        %button.close{ type: "button",  data: { dismiss: "modal" }, aria: { label: "Close" } }
+          %span{ aria: { hidden: "true" } } &times;
+      %div.modal-body
+        %p Woo Hoo, you just launched a modal window
+      %div.modal-footer
+        %button.btn.btn-secondary{ type: "button", data: { dismiss: "modal" } } Close
+        %button.btn.btn-primary{   type: "button", data: { dismiss: "modal" } } Save Changes
   

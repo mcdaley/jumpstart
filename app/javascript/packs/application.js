@@ -14,6 +14,7 @@
 import Rails      from 'rails-ujs'
 import Turbolinks from 'turbolinks'
 
+import 'bootstrap/dist/js/bootstrap'
 import '../src/js/pages'
 
 Rails.start()
