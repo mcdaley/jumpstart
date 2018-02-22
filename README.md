@@ -143,14 +143,41 @@ bootstrap 4.0.0 to verify that it is installed and configured correctly.
 
 **NOTE:** Later I will setup the JavaScript components
 
-1. Install the gem in the Gemfile and run bundle install
-2. Rename the application.css to application.scss
-3. Remove all the content from the application.scss as the '* require' is used for
-   loading css and not scss files.
-4. Create global.scss and bootstrap_and_overrides.sccs files and import them in the
-   application.scss
-5. Restart the rails server
-5. Add a custom css class in the pages#home and verify everything is working.
+Add bootstrap to your Gemfile:
+
+```
+gem 'bootstrap', '~> 4.0.0'
+```
+
+Ensure that sprockets-rails is at least v2.3.2. Run ```bundle install``` and 
+restart your server to make the files available through the pipeline.
+
+Import Bootstrap styles in ```app/assets/stylesheets/application.scss```:
+
+```bash
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+```
+
+The available variables can be found here. Make sure the file has .scss extension 
+(or .sass for Sass syntax). If you have just generated a new Rails app, it may 
+come with a .css file instead. If this file exists, it will be served instead 
+of Sass, so rename it:
+
+```bash
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+```
+Then, remove all the *= require and *= require_tree statements from the Sass 
+file. Instead, use @import to import Sass files.
+
+Do not use ```*= require``` in Sass or your other stylesheets will not be able to 
+access the Bootstrap mixins and variables.
+
+**To Configure and Test**
+Add a custom css class in the pages#home and verify everything is working.
+
+* Create ```global.scss``` and ```bootstrap_and_overrides.sccs``` files and import them in the ```application.scss```
+* Add a custom css class in the pages#home and verify everything is working
 
 ## Setup Testing
 **CREATE SEPARATE SECTION FOR TESTING**
