@@ -1,0 +1,18 @@
+-# ----------------------------------------------------------------------------
+-# app/views/layouts/_navigation.html.haml
+-# ----------------------------------------------------------------------------
+%nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark
+  %a{ class: "navbar-brand", href: "#" } Jumpstart
+  %button.navbar-toggler{ type: "button",  
+                          data: { toggle:   "collapse",               target: "#navbarSupportedContent" },  
+                          aria: { controls: "navbarSupportedContent", expanded: "false",  label: "Toggle navigation" } }
+    %span.navbar-toggler-icon
+
+  %div#navbarNavAltMarkup.collapse.navbar-collapse
+    %div.navbar-nav
+      %a{ class: "nav-item nav-link active", href: "#" }    Home 
+      %a{ class: "nav-item nav-link", href: "#" }           Link One
+      %a{ class: "nav-item nav-link", href: "#" }           Link Two
+      %a{ class: "nav-item nav-link", href: "#" }           Help
+      %a{ class: "nav-item nav-link", href: "#" }           About
+      %a{ class: "nav-item nav-link disabled", href: "#" }  Disabled

@@ -1,0 +1,21 @@
+-# ----------------------------------------------------------------------------
+-# app/views/layouts/application.html.haml
+-# ----------------------------------------------------------------------------
+
+!!!
+%html
+  %head
+    %title  Jumpstart
+    %meta{  charset:  "utf-8" }
+    %meta{  name:     "viewport", 
+            content:  "width=device-width, initial-scale=1, shrink-to-fit=no" }
+    
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+
+  %body
+    %header
+      = render 'layouts/navigation'
+    %%main.container-fluid{ role: "main" }
+      = yield

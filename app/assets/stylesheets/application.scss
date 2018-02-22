@@ -1,0 +1,8 @@
+/******************************************************************************
+ * app/assets/stylesheets/application.scss
+ ******************************************************************************/
+
+@import "globals";
+@import "bootstrap_and_overrides";
+@import "bootstrap";                // Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "pages";

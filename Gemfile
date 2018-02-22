@@ -30,6 +30,7 @@ gem 'webpacker'
 gem 'jbuilder',     '~> 2.5'
 
 gem 'haml',         '~> 5.0', '>= 5.0.4'
+gem 'bootstrap',    '~> 4.0.0'
 
 
 # Use Redis adapter to run Action Cable in production
