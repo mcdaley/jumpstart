@@ -137,6 +137,21 @@ Rails.application.routes.draw do
 end
 ```
 
+## Setup Bootstrap SASS/CSS
+First, I'm going to setup the sass/css styling of the jumpstart app using 
+bootstrap 4.0.0 to verify that it is installed and configured correctly. 
+
+**NOTE:** Later I will setup the JavaScript components
+
+1. Install the gem in the Gemfile and run bundle install
+2. Rename the application.css to application.scss
+3. Remove all the content from the application.scss as the '* require' is used for
+   loading css and not scss files.
+4. Create global.scss and bootstrap_and_overrides.sccs files and import them in the
+   application.scss
+5. Restart the rails server
+5. Add a custom css class in the pages#home and verify everything is working.
+
 ## Setup Testing
 **CREATE SEPARATE SECTION FOR TESTING**
 ### Rspec
