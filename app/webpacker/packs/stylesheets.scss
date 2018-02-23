@@ -1,0 +1,10 @@
+/******************************************************************************
+ * app/webpacker/packs/stylesheets.scss
+ ******************************************************************************/
+
+@import "../src/stylesheets/globals";
+@import "../src/stylesheets/bootstrap_and_overrides";
+@import "../src/stylesheets/pages";
+
+// Custom bootstrap variables must be set or imported *before* bootstrap
+@import '~bootstrap/scss/bootstrap';                

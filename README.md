@@ -149,10 +149,10 @@ Add bootstrap to your Gemfile:
 gem 'bootstrap', '~> 4.0.0'
 ```
 
-Ensure that sprockets-rails is at least v2.3.2. Run ```bundle install``` and 
+Ensure that sprockets-rails is at least v2.3.2. Run `bundle install` and 
 restart your server to make the files available through the pipeline.
 
-Import Bootstrap styles in ```app/assets/stylesheets/application.scss```:
+Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 
 ```bash
 // Custom bootstrap variables must be set or imported *before* bootstrap.
@@ -170,14 +170,21 @@ $ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.s
 Then, remove all the *= require and *= require_tree statements from the Sass 
 file. Instead, use @import to import Sass files.
 
-Do not use ```*= require``` in Sass or your other stylesheets will not be able to 
+Do not use `*= require` in Sass or your other stylesheets will not be able to 
 access the Bootstrap mixins and variables.
 
 **To Configure and Test**
 Add a custom css class in the pages#home and verify everything is working.
 
-* Create ```global.scss``` and ```bootstrap_and_overrides.sccs``` files and import them in the ```application.scss```
+* Create `global.scss` and `bootstrap_and_overrides.sccs` files and import them in the `application.scss`
 * Add a custom css class in the pages#home and verify everything is working
+
+## Setup Bootstrap JavaScript
+Details migrating all of the JavaScript files from sprockets/asset pipeline 
+to webpacker and also setting up Bootstrap JavaScript components.
+
+See the article that details how to set it up
+[Goodbye sprockets, hello webpacker](https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79)
 
 ## Setup Testing
 **CREATE SEPARATE SECTION FOR TESTING**
