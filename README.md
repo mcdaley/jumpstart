@@ -188,6 +188,13 @@ See the article that details how to set it up
 
 ## Setup Testing
 **CREATE SEPARATE SECTION FOR TESTING**
+
+TO DO - 02/26/2018
+1.) Create reactjs components for the home page
+2.) Run basic rspec model and controller tests
+3.) Setup Jest and Enzyme for reactjs testing
+4.) Setup basic Jest snapshot test for a component
+
 ### Rspec
 
 **NOTE:** 
